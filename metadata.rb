@@ -7,8 +7,10 @@ recipe      "rll::rll-init", "Initializes repositories and minor RLL-related thi
 recipe      "rll::rll-collectd", "Installs and configures collectd for RightScale monitoring"
 
 attribute   "hostname",
+  :display_name => "Hostname for this server",
   :required => "required",
   :type => "string",
+  :default => "env:RS_SERVER_NAME",
   :recipes => ["rll::rll-init"]
 
 
