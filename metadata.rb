@@ -1,3 +1,4 @@
+cookbook    "rll"
 maintainer  "Thorsten von Eicken"
 description "RLL test scripts"
 version     "0.1.0"
