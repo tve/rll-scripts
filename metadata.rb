@@ -5,6 +5,8 @@ version     "0.1.0"
 
 recipe      "rll::rll-init", "Initializes repositories and minor RLL-related things"
 recipe      "rll::rll-collectd", "Installs and configures collectd for RightScale monitoring"
+recipe      "rll::rll-test-script", "Test operational script"
+recipe      "rll::rll-shutdown-reason", "Print out the reason for shutdown"
 
 attribute   "HOSTNAME",
   :display_name => "Hostname for this server",
