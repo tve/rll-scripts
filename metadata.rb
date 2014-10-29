@@ -8,7 +8,7 @@ recipe      "rll::rll-collectd", "Installs and configures collectd for RightScal
 
 attribute   "hostname",
   :display_name => "Hostname for this server",
-  :required => "required",
+  :required => "optional",
   :type => "string",
   :default => "env:RS_SERVER_NAME",
   :recipes => ["rll::rll-init"]
