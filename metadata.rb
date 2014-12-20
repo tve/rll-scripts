@@ -10,22 +10,22 @@ recipe      "rll::rll-shutdown-reason", "Print out the reason for shutdown"
 
 attribute   "HOSTNAME",
   :display_name => "Hostname for this server",
-  :required => "optional",
-  :type => "env",
+  :required => "required",
+  :type => "string",
   :default => "RS_SERVER_NAME",
   :recipes => ["rll::rll-init"]
 
 attribute   "COLLECTD_SERVER",
   :display_name => "RightScale monitoring server to send data to",
-  :required => "optional",
-  :type => "env",
+  :required => "required",
+  :type => "string",
   :default => "RS_SKETCHY",
   :recipes => ["rll::rll-collectd"]
 
 attribute   "RS_INSTANCE_UUID",
   :display_name => "RightScale monitoring ID for this server",
-  :required => "optional",
-  :type => "env",
+  :required => "required",
+  :type => "string",
   :default => "RS_INSTANCE_UUID",
   :recipes => ["rll::rll-collectd"]
 
@@ -39,7 +39,7 @@ attribute   "VAR",
 attribute   "CRED",
   :display_name => "some credential",
   :required => "recommended",
-  :type => "cred",
+  :type => "string",
   :default => "AWS_ACCESS_KEY_ID",
   :recipes => ["rll::rll-test-script"]
 
