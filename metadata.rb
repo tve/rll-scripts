@@ -10,21 +10,21 @@ recipe      "rll::rll-shutdown-reason", "Print out the reason for shutdown"
 
 attribute   "HOSTNAME",
   :display_name => "Hostname for this server",
-  :required => "required",
+  :required => "optional",
   :type => "string",
   :default => "RS_SERVER_NAME",
   :recipes => ["rll::rll-init"]
 
 attribute   "COLLECTD_SERVER",
   :display_name => "RightScale monitoring server to send data to",
-  :required => "required",
+  :required => "optional",
   :type => "string",
   :default => "RS_SKETCHY",
   :recipes => ["rll::rll-collectd"]
 
 attribute   "RS_INSTANCE_UUID",
   :display_name => "RightScale monitoring ID for this server",
-  :required => "required",
+  :required => "optional",
   :type => "string",
   :default => "RS_INSTANCE_UUID",
   :recipes => ["rll::rll-collectd"]
